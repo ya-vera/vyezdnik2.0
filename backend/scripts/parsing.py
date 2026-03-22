@@ -37,10 +37,7 @@ COUNTRIES_DATA = {
                 "url": "https://tdac.immigration.go.th/manual/en/faq.html",
                 "source_name": "TDAC FAQ",
             },
-            {
-                "url": "https://www.immigration.go.th/en/?p=entry_requirements",
-                "source_name": "Immigration Thailand — Entry Requirements",
-            },
+            # immigration.go.th/?p=entry_requirements — стабильно 403 + Cloudflare; не парсится.
             {
                 "url": "https://thaiconsulatela.thaiembassy.org/en/publicservice/visa-exemption-and-visa-on-arrival-to-thailand",
                 "source_name": "Visa Exemption & VOA — зеркало (актуальный список 93 стран)",
@@ -154,6 +151,26 @@ def _headless_enabled() -> bool:
     )
 
 
+def _is_bot_or_waf_interstitial(text: str) -> bool:
+    """Страница Cloudflare / антибот: много символов, но не контент для RAG."""
+    if not text or len(text) < 200:
+        return False
+    low = text.lower()
+    ru = "проверки безопасности" in low or "проверка безопасности" in low
+    ru_bot = "бот" in low or "вредоносных ботов" in low
+    if ru and ru_bot:
+        return True
+    if "security check" in low and "bot" in low:
+        return True
+    if "checking your browser" in low:
+        return True
+    if "just a moment" in low and "cloudflare" in low:
+        return True
+    if "cf-browser-verification" in low or "challenge-platform" in low:
+        return True
+    return False
+
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9,ru;q=0.8",
@@ -181,11 +198,16 @@ def fetch_with_requests(url, max_retries=4):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
         text = extract_clean_text(soup)
-        if len(text) > 500:
+        if len(text) > 500 and not _is_bot_or_waf_interstitial(text):
             return text
-        print(
-            f"  requests: мало извлечённого текста ({len(text)} симв.) — часто JS/антибот/редирект"
-        )
+        if _is_bot_or_waf_interstitial(text):
+            print(
+                "  requests: похоже на страницу антибота/WAF, а не на контент — пропускаем"
+            )
+        else:
+            print(
+                f"  requests: мало извлечённого текста ({len(text)} симв.) — часто JS/антибот/редирект"
+            )
     except Exception as e:
         print(f"  requests failed: {e}")
     return None
@@ -237,11 +259,16 @@ def fetch_with_undetected(url):
         html = driver.page_source
         soup = BeautifulSoup(html, "html.parser")
         text = extract_clean_text(soup)
-        if len(text) > 500:
+        if len(text) > 500 and not _is_bot_or_waf_interstitial(text):
             return text
-        print(
-            f"  undetected: мало текста ({len(text)} симв.) — капча, гео-блок, headless или контент в iframe"
-        )
+        if _is_bot_or_waf_interstitial(text):
+            print(
+                "  undetected: страница антибота/WAF (не реальный контент) — пробуем дальше"
+            )
+        else:
+            print(
+                f"  undetected: мало текста ({len(text)} симв.) — капча, гео-блок, headless или контент в iframe"
+            )
     except Exception as e:
         print(f"  undetected failed: {e}")
     finally:
@@ -279,9 +306,14 @@ def fetch_fallback_selenium(url):
         time.sleep(4)
         html = driver.page_source
         text = extract_clean_text(BeautifulSoup(html, "html.parser"))
-        if len(text) > 500:
+        if len(text) > 500 and not _is_bot_or_waf_interstitial(text):
             return text
-        print(f"  fallback: мало текста ({len(text)} симв.) после Selenium")
+        if _is_bot_or_waf_interstitial(text):
+            print(
+                "  fallback: антибот/WAF вместо контента — пробуем дальше"
+            )
+        else:
+            print(f"  fallback: мало текста ({len(text)} симв.) после Selenium")
     except Exception as e:
         print(f"  fallback failed: {e}")
     finally:

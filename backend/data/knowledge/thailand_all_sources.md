@@ -3127,60 +3127,14 @@ Update Arrival Card
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════
 
-## Источник: Immigration Thailand — Entry Requirements
-source_url: https://www.immigration.go.th/en/?p=entry_requirements
-country: thailand
-date_fetched: 2026-03-23
-
-www.immigration.go.th Выполнение проверки безопасности Этот веб-сайт использует службу безопасности для защиты от вредоносных ботов. Эта страница отображается, пока веб-сайт проверяет, что вы не бот. Проверка выполнена успешно. Ожидание ответа www.immigration.go.th
-
-www.immigration.go.th Выполнение проверки безопасности Этот веб-сайт использует службу безопасности для защиты от вредоносных ботов. Эта страница отображается, пока веб-сайт проверяет, что вы не бот. Проверка выполнена успешно. Ожидание ответа www.immigration.go.th
-
-www.immigration.go.th
-
-
-WWW.IMMIGRATION.GO.TH
----------------------
-
-
-
-ВЫПОЛНЕНИЕ ПРОВЕРКИ БЕЗОПАСНОСТИ
---------------------------------
-
-
-Этот веб-сайт использует службу безопасности для защиты от вредоносных ботов. Эта страница отображается, пока веб-сайт проверяет, что вы не бот.
-
-Проверка выполнена успешно. Ожидание ответа www.immigration.go.th
-
-
-ПРОВЕРКА ВЫПОЛНЕНА УСПЕШНО. ОЖИДАНИЕ ОТВЕТА WWW.IMMIGRATION.GO.TH
------------------------------------------------------------------
-
-
-Ray ID: 9e086f735f50d396 Производительность и безопасность с Cloudflare Конфиденциальность
-
-Ray ID: 9e086f735f50d396 Производительность и безопасность с Cloudflare Конфиденциальность
-
-Ray ID: 9e086f735f50d396 Производительность и безопасность с Cloudflare Конфиденциальность
-
-Ray ID: 9e086f735f50d396
-
-Ray ID: 9e086f735f50d396
-
-Производительность и безопасность с Cloudflare Конфиденциальность
-
-Производительность и безопасность с Cloudflare
-
-════════════════════════════════════════════════════════════════════════════════════════════════════
-
 ## Источник: Visa Exemption & VOA — зеркало (актуальный список 93 стран)
 source_url: https://thaiconsulatela.thaiembassy.org/en/publicservice/visa-exemption-and-visa-on-arrival-to-thailand
 country: thailand
 date_fetched: 2026-03-23
 
-Home Services for Thais Thai Passport Thai ID Card Legalization Protection for Thais Mobile Consular Visa Visa information Visa Types & Requirements Visa Exemption and Visa on Arrival to Thailand Frequently Ask Questions (FAQ) for VISA Apply for Visa Online Visting Thailand Thailand in brief Thailand and the US New & Events Press Release Consulate's Events Procurement Notices About Consulate Consul-General Consuls Consulate's History Contact Us Address and Service Hours Jurisdiction Consulate's Holiday Contact Information Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF) TOP Royal Thai Consulate-General, Los Angeles สถานกงสุลใหญ่ ณ นครลอสแอนเจลิส Address : 611 North Larchmont Blvd., 2nd Floor, Los Angeles CA 90004 Office Hours : Monday - Friday, Time: 09.00 - 16.00 (323) 962-9574 (323) 962-2128 [email protected] Subscribe Follow us: Subscribe
+Home Services for Thais Thai Passport Thai ID Card Legalization Protection for Thais Mobile Consular Visa Visa information Visa Types & Requirements Visa Exemption and Visa on Arrival to Thailand Frequently Ask Questions (FAQ) for VISA Apply for Visa Online Visting Thailand Thailand in brief Thailand and the US New & Events Press Release Consulate's Events Procurement Notices About Consulate Consul-General Consuls Consulate's History Contact Us Address and Service Hours Jurisdiction Consulate's Holiday Contact Information Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF) TOP Royal Thai Consulate-General, Los Angeles สถานกงสุลใหญ่ ณ นครลอสแอนเจลิส Address : 611 North Larchmont Blvd., 2nd Floor, Los Angeles CA 90004 Office Hours : Monday - Friday, Time: 09.00 - 16.00 (323) 962-9574 (323) 962-2128 [email protected] Subscribe Follow us: Subscribe
 
-Home Services for Thais Thai Passport Thai ID Card Legalization Protection for Thais Mobile Consular Visa Visa information Visa Types & Requirements Visa Exemption and Visa on Arrival to Thailand Frequently Ask Questions (FAQ) for VISA Apply for Visa Online Visting Thailand Thailand in brief Thailand and the US New & Events Press Release Consulate's Events Procurement Notices About Consulate Consul-General Consuls Consulate's History Contact Us Address and Service Hours Jurisdiction Consulate's Holiday Contact Information Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF) TOP Royal Thai Consulate-General, Los Angeles สถานกงสุลใหญ่ ณ นครลอสแอนเจลิส Address : 611 North Larchmont Blvd., 2nd Floor, Los Angeles CA 90004 Office Hours : Monday - Friday, Time: 09.00 - 16.00 (323) 962-9574 (323) 962-2128 [email protected] Subscribe Follow us: Subscribe
+Home Services for Thais Thai Passport Thai ID Card Legalization Protection for Thais Mobile Consular Visa Visa information Visa Types & Requirements Visa Exemption and Visa on Arrival to Thailand Frequently Ask Questions (FAQ) for VISA Apply for Visa Online Visting Thailand Thailand in brief Thailand and the US New & Events Press Release Consulate's Events Procurement Notices About Consulate Consul-General Consuls Consulate's History Contact Us Address and Service Hours Jurisdiction Consulate's Holiday Contact Information Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF) TOP Royal Thai Consulate-General, Los Angeles สถานกงสุลใหญ่ ณ นครลอสแอนเจลิส Address : 611 North Larchmont Blvd., 2nd Floor, Los Angeles CA 90004 Office Hours : Monday - Friday, Time: 09.00 - 16.00 (323) 962-9574 (323) 962-2128 [email protected] Subscribe Follow us: Subscribe
 
 Home Services for Thais Thai Passport Thai ID Card Legalization Protection for Thais Mobile Consular Visa Visa information Visa Types & Requirements Visa Exemption and Visa on Arrival to Thailand Frequently Ask Questions (FAQ) for VISA Apply for Visa Online Visting Thailand Thailand in brief Thailand and the US New & Events Press Release Consulate's Events Procurement Notices About Consulate Consul-General Consuls Consulate's History Contact Us Address and Service Hours Jurisdiction Consulate's Holiday Contact Information
 
@@ -3280,17 +3234,17 @@ Consulate's Holiday
 
 Contact Information
 
-Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
+Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
 
-Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
+Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
 
-Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
+Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
 
-Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
+Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
 
-Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
+Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
 
-Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
+Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown New Tourist Visa Exemption Scheme (60 Days) Effective Date 15 July 2024 Nationals of the following 93 countries and territories are entitled to visa exemption for the purpose of tourism business engagements or urgent work or ad-hoc work, for up to 60 days period of stay and can be extended for another period not exceeding 30 days. Extension of stay is solely at the discretion of the immigration officer. Before the maximum stay of 90 days are eligible to apply for a new type of visa in Thailand. New Visa on Arrival (VoA) Effective Date 15 July 2024 Nationals of the following 31 countries and territories may apply for visa on arrival at the immigration checkpoints on arrival for tourism purpose. New Visa on Arrival (PDF)
 
 Visa Exemption and Visa on Arrival to Thailand Visa Exemption and Visa on Arrival to Thailand
 
@@ -3304,9 +3258,9 @@ VISA EXEMPTION AND VISA ON ARRIVAL TO THAILAND
 ----------------------------------------------
 
 
-วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view Toggle Dropdown
+วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view Toggle Dropdown
 
-วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,498 view
+วันที่นำเข้าข้อมูล 30 Nov 2023 วันที่ปรับปรุงข้อมูล 25 Jul 2024 | 1,107,526 view
 
 วันที่นำเข้าข้อมูล 30 Nov 2023
 
@@ -3316,9 +3270,9 @@ VISA EXEMPTION AND VISA ON ARRIVAL TO THAILAND
 
 วันที่ปรับปรุงข้อมูล 25 Jul 2024
 
-| 1,107,498 view
+| 1,107,526 view
 
-1,107,498 view
+1,107,526 view
 
 Toggle Dropdown
 

@@ -1,3 +1,5 @@
+import os
+import platform
 import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
@@ -114,6 +116,44 @@ COUNTRIES_DATA = {
 
 OUTPUT_DIR = Path("backend/data/knowledge")
 
+def _chrome_executable() -> str | None:
+    """Path to Chrome/Chromium. Set CHROME_BINARY if installed in a non-standard location."""
+    env = os.environ.get("CHROME_BINARY", "").strip()
+    if env and Path(env).is_file():
+        return env
+    system = platform.system()
+    candidates: list[str] = []
+    if system == "Darwin":
+        candidates = [
+            "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "/Applications/Chromium.app/Contents/MacOS/Chromium",
+        ]
+    elif system == "Linux":
+        candidates = [
+            "/usr/bin/google-chrome-stable",
+            "/usr/bin/google-chrome",
+            "/usr/bin/chromium",
+            "/usr/bin/chromium-browser",
+        ]
+    elif system == "Windows":
+        candidates = [
+            os.path.expandvars(r"%ProgramFiles%\Google\Chrome\Application\chrome.exe"),
+            os.path.expandvars(r"%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"),
+        ]
+    for p in candidates:
+        if p and Path(p).is_file():
+            return p
+    return None
+
+
+def _headless_enabled() -> bool:
+    return os.environ.get("PARSING_HEADLESS", "1").strip().lower() not in (
+        "0",
+        "false",
+        "no",
+    )
+
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9,ru;q=0.8",
@@ -143,14 +183,26 @@ def fetch_with_requests(url, max_retries=4):
         text = extract_clean_text(soup)
         if len(text) > 500:
             return text
+        print(
+            f"  requests: мало извлечённого текста ({len(text)} симв.) — часто JS/антибот/редирект"
+        )
     except Exception as e:
         print(f"  requests failed: {e}")
     return None
 
 def fetch_with_undetected(url):
     print("   → undetected-chromedriver")
+    chrome_path = _chrome_executable()
+    if not chrome_path:
+        print(
+            "  undetected skipped: не найден Google Chrome/Chromium. "
+            "Установите Chrome (macOS: Chrome.app) или задайте CHROME_BINARY=/полный/путь/к/chrome"
+        )
+        return None
+
     options = uc.ChromeOptions()
-    options.add_argument("--headless")
+    if _headless_enabled():
+        options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -161,7 +213,11 @@ def fetch_with_undetected(url):
 
     driver = None
     try:
-        driver = uc.Chrome(options=options, use_subprocess=True)
+        driver = uc.Chrome(
+            options=options,
+            browser_executable_path=chrome_path,
+            use_subprocess=True,
+        )
         driver.get(url)
         time.sleep(8 + random.uniform(3, 6))
 
@@ -183,6 +239,9 @@ def fetch_with_undetected(url):
         text = extract_clean_text(soup)
         if len(text) > 500:
             return text
+        print(
+            f"  undetected: мало текста ({len(text)} симв.) — капча, гео-блок, headless или контент в iframe"
+        )
     except Exception as e:
         print(f"  undetected failed: {e}")
     finally:
@@ -195,8 +254,17 @@ def fetch_with_undetected(url):
 
 def fetch_fallback_selenium(url):
     print("   → fallback selenium + webdriver-manager")
+    chrome_path = _chrome_executable()
+    if not chrome_path:
+        print(
+            "  fallback skipped: не найден Chrome. Установите Google Chrome или задайте CHROME_BINARY"
+        )
+        return None
+
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")
+    options.binary_location = chrome_path
+    if _headless_enabled():
+        options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument(f"--user-agent={HEADERS['User-Agent']}")
@@ -213,6 +281,7 @@ def fetch_fallback_selenium(url):
         text = extract_clean_text(BeautifulSoup(html, "html.parser"))
         if len(text) > 500:
             return text
+        print(f"  fallback: мало текста ({len(text)} симв.) после Selenium")
     except Exception as e:
         print(f"  fallback failed: {e}")
     finally:

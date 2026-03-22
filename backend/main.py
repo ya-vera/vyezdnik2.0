@@ -3,9 +3,9 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
+import app.metrics  # noqa: F401 — register custom metrics on the default Prometheus registry
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from app.agents.orchestrator import orchestrator
 from app.chat_log import append_chat_log, append_error_log, mask_pii
 from app.rag_config import is_known_country
 from fastapi.middleware.cors import CORSMiddleware
@@ -50,6 +50,9 @@ def chat(req: ChatRequest):
             detail="Неизвестный код страны. Используйте одну из поддерживаемых стран.",
         )
     try:
+        # Lazy import: orchestrator pulls RAG/embedder and blocks for a long time on first load.
+        from app.agents.orchestrator import orchestrator
+
         answer = orchestrator(req.message, country)
     except Exception as e:
         msg = f"{type(e).__name__}: {e}"

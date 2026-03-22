@@ -1,7 +1,7 @@
 ## Источник: МИД РФ — общая информация
 source_url: https://www.kdmid.ru/docs/turkey/information-about-the-country
 country: turkey
-date_fetched: 2026-03-22
+date_fetched: 2026-03-23
 
 Консульский информационный портал
 

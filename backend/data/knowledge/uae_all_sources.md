@@ -1,7 +1,7 @@
 ## Источник: МИД РФ — общая информация
 source_url: https://www.kdmid.ru/docs/united-arab-emirates/information-about-the-country
 country: uae
-date_fetched: 2026-03-22
+date_fetched: 2026-03-23
 
 Консульский информационный портал
 
@@ -523,7 +523,7 @@ date_fetched: 2026-03-22
 ## Источник: Посольство ОАЭ в Москве (справочно)
 source_url: https://www.mofa.gov.ae/en/missions/moscow
 country: uae
-date_fetched: 2026-03-22
+date_fetched: 2026-03-23
 
 Follow Us
 

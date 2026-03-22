@@ -1,7 +1,7 @@
 ## Источник: МИД РФ — общая информация
 source_url: https://www.kdmid.ru/docs/sri-lanka/information-about-the-country
 country: srilanka
-date_fetched: 2026-03-22
+date_fetched: 2026-03-23
 
 Консульский информационный портал
 
@@ -515,7 +515,7 @@ date_fetched: 2026-03-22
 ## Источник: ETA Sri Lanka (справочно)
 source_url: https://www.eta.gov.lk/slvisa/
 country: srilanka
-date_fetched: 2026-03-22
+date_fetched: 2026-03-23
 
 Emergency Alert Alert 01 (2024.09.27 00:00) China, India, Indonesia, Russia, Thailand, Malaysia, and Japan 01. A free Visa regime is implemented for nationals of China, India, Indonesia, Russia, Thailand, Malaysia, and Japan with immediate effect. 02. Nationals of the above-nominated countries possessing Diplomatic, Official, Public Affairs, Service, and Ordinary passports are eligible to enjoy a visa-free regime under this scheme. 03. Above nominated nationals should apply for Electronic Travel Authorization (ETA) before arriving in Sri Lanka subject to granting/issuing free of charge. 04. Under this scheme tourists can enjoy a 30 days free visa period and a double entry facility is permitted from the date of first arrival to Sri Lanka within 30 days. 05. Applicants who have obtained a free visa and need to stay in Sri Lanka for more than 30 days can apply for an extension by paying the appropriate visa fee. 06. Please note that this particular visa-free regime applies to the above seven nominated countries and the rest of the countries may follow the general rules and regulations applicable to Sri Lanka ETA. Alert 02 (2022.11.24 00:00) Applicable for all ETA applicants ETA Processing Fee will be revised with effect from 01.12.2022 00:00 hrs. Please click here for further details of new ETA Processing Fees. Alert 03 (2021.01.16 00:00) Cameroon, Nigeria, Ivory Coast and Ghana Visitors from Cameroon, Nigeria, Ivory Coast and Ghana who intend to apply for ETA may apply through Sri Lankan Sponsor for their ETA from the Head office of the Department of Immigration & Emigration, Sri Lanka. OK
 
@@ -555,15 +555,15 @@ Visitors from Cameroon, Nigeria, Ivory Coast and Ghana who intend to apply for E
 
 OK
 
-Select 
-                                            Language English Español Deutsch 中文/汉语 Русский 
+Select 
+                                            Language English Español Deutsch 中文/汉语 Русский 
                                                 язык हिंदी 日本語 Français عربي
 
-Select 
-                                            Language English Español Deutsch 中文/汉语 Русский 
+Select 
+                                            Language English Español Deutsch 中文/汉语 Русский 
                                                 язык हिंदी 日本語 Français عربي
 
-Select 
+Select 
                                             Language
 
 English
@@ -574,7 +574,7 @@ Deutsch
 
 中文/汉语
 
-Русский 
+Русский 
                                                 язык
 
 हिंदी

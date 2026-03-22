@@ -38,11 +38,50 @@ services:
       - "9090:9090"
     volumes:
       - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/rules:/etc/prometheus/rules:ro
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.retention.time=15d
+      - --web.enable-lifecycle
     depends_on:
       - backend
+      - blackbox
+      - qdrant
+    restart: unless-stopped
+    stop_grace_period: 30s
+    networks:
+      - vyezdnik-net
+
+  blackbox:
+    image: prom/blackbox-exporter:v0.25.0
+    container_name: vyezdnik-blackbox
+    ports:
+      - "9115:9115"
+    volumes:
+      - ./monitoring/blackbox.yml:/config/blackbox.yml:ro
+    command:
+      - --config.file=/config/blackbox.yml
+    restart: unless-stopped
+    stop_grace_period: 10s
+    networks:
+      - vyezdnik-net
+
+  grafana:
+    image: grafana/grafana:11.3.0
+    container_name: vyezdnik-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_SERVER_ROOT_URL: http://localhost:3001
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on:
+      - prometheus
     restart: unless-stopped
     stop_grace_period: 30s
     networks:
@@ -74,3 +113,4 @@ volumes:
   qdrant_storage:
   hf_cache:
   frontend_node_modules:
+  grafana_data:

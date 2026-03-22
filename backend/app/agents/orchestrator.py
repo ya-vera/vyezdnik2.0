@@ -18,8 +18,31 @@ from app.agents.lawyer_agent import lawyer_agent
 from app.agents.router_agent import detect_intent
 from app.metrics import agent_calls_total, agent_duration_seconds, orchestrator_runs_total
 
+_HISTORY_MAX_TURNS = 4
+_HISTORY_MSG_CHARS = 1500
+
+
+def _format_history_block(prior: list[dict[str, str]] | None) -> str:
+    if not prior:
+        return ""
+    tail = prior[-(_HISTORY_MAX_TURNS * 2) :]
+    lines: list[str] = []
+    for m in tail:
+        role = m.get("role", "")
+        content = (m.get("content") or "")[:_HISTORY_MSG_CHARS]
+        if not content.strip():
+            continue
+        label = "Пользователь" if role == "user" else "Ассистент"
+        lines.append(f"{label}: {content}")
+    if not lines:
+        return ""
+    return "Предыдущий диалог:\n" + "\n".join(lines)
+
 
 class AgentState(TypedDict):
+    """user_turn — только текущая реплика (guard). question — с историей для RAG/форм."""
+
+    user_turn: str
     question: str
     country: str
     guard_allowed: NotRequired[bool]
@@ -32,7 +55,7 @@ class AgentState(TypedDict):
 def _guard_node(state: AgentState) -> dict:
     start = time.perf_counter()
     try:
-        allowed = guard_agent(state["question"])
+        allowed = guard_agent(state["user_turn"])
         agent_calls_total.labels(
             agent="guard", outcome="allow" if allowed else "deny"
         ).inc()
@@ -196,6 +219,23 @@ def _build_graph():
 _COMPILED = _build_graph()
 
 
-def orchestrator(question: str, country: str = "thailand") -> str:
-    result = _COMPILED.invoke({"question": question, "country": country})
+def orchestrator(
+    question: str,
+    country: str = "thailand",
+    prior_messages: list[dict[str, str]] | None = None,
+) -> str:
+    user_turn = question.strip()
+    hist = _format_history_block(prior_messages)
+    full_question = (
+        f"{hist}\n\nТекущий вопрос пользователя:\n{user_turn}"
+        if hist
+        else user_turn
+    )
+    result = _COMPILED.invoke(
+        {
+            "user_turn": user_turn,
+            "question": full_question,
+            "country": country,
+        }
+    )
     return result.get("final_answer", "")

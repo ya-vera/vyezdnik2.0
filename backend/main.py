@@ -8,6 +8,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from app.chat_log import append_chat_log, append_error_log, mask_pii
 from app.rag_config import is_known_country
+from app import session_store
 from fastapi.middleware.cors import CORSMiddleware
 from prometheus_fastapi_instrumentator import Instrumentator
 
@@ -27,7 +28,13 @@ Instrumentator().instrument(app).expose(app, include_in_schema=False)
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    payload: dict = {"status": "ok"}
+    try:
+        session_store.ping_redis()
+        payload["redis"] = "ok"
+    except Exception:
+        payload["redis"] = "unavailable"
+    return payload
 
 class ChatRequest(BaseModel):
     message: str
@@ -50,10 +57,11 @@ def chat(req: ChatRequest):
             detail="Неизвестный код страны. Используйте одну из поддерживаемых стран.",
         )
     try:
+        prior = session_store.get_history(req.session_id)
         # Lazy import: orchestrator pulls RAG/embedder and blocks for a long time on first load.
         from app.agents.orchestrator import orchestrator
 
-        answer = orchestrator(req.message, country)
+        answer = orchestrator(req.message, country, prior_messages=prior)
     except Exception as e:
         msg = f"{type(e).__name__}: {e}"
         append_error_log(country, req.session_id, msg)
@@ -62,6 +70,11 @@ def chat(req: ChatRequest):
             status_code=503,
             detail="Сервис временно недоступен. Попробуйте позже или проверьте конфигурацию.",
         )
+
+    try:
+        session_store.append_turn(req.session_id, req.message, answer)
+    except Exception as e:
+        logger.warning("session_store.append_turn failed (ответ уже сгенерирован): %s", e)
 
     append_chat_log(country, req.message, answer)
     return {"answer": answer}

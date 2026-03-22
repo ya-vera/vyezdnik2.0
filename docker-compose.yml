@@ -1,4 +1,15 @@
 services:
+  redis:
+    image: redis:7-alpine
+    container_name: vyezdnik-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --maxmemory 128mb --maxmemory-policy allkeys-lru
+    restart: unless-stopped
+    stop_grace_period: 10s
+    networks:
+      - vyezdnik-net
+
   qdrant:
     image: qdrant/qdrant:v1.17.0
     container_name: vyezdnik-qdrant
@@ -20,11 +31,13 @@ services:
     environment:
       - MISTRAL_API_KEY=${MISTRAL_API_KEY}
       - QDRANT_URL=http://qdrant:6333
+      - REDIS_URL=redis://redis:6379/0
     volumes:
       - ./backend:/app
       - hf_cache:/root/.cache/huggingface
     depends_on:
       - qdrant
+      - redis
     restart: unless-stopped
     stop_grace_period: 30s
     init: true

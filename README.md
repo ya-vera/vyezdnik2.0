@@ -172,3 +172,9 @@ sudo docker compose up --build -d
 - мультиязычная поддержка
 - админка для обновления базы знаний
 - облачный деплой
+
+
+## Материалы по ДЗ 3 (Инфраструктура)
+
+- Отчёт по этапу: [reports/dz3_infra_report.md](reports/dz3_infra_report.md)
+- Инфраструктурные изменения: Docker Compose, Redis, Prometheus, Grafana, Blackbox, метрики агентов

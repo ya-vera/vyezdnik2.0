@@ -1,0 +1,12 @@
+groups:
+  - name: vyezdnik_recording
+    interval: 30s
+    rules:
+      - record: vyezdnik:agent_calls:rate5m
+        expr: sum by (agent, outcome) (rate(vyezdnik_agent_calls_total[5m]))
+
+      - record: vyezdnik:orchestrator_runs:rate5m
+        expr: sum by (result) (rate(vyezdnik_orchestrator_runs_total[5m]))
+
+      - record: vyezdnik:http_requests:rate5m
+        expr: sum by (handler, method, status) (rate(http_requests_total[5m]))

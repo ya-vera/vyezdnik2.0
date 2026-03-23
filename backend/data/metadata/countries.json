@@ -1,0 +1,46 @@
+{
+  "thailand": {
+    "name": "Таиланд",
+    "forms": [
+      {
+        "id": "tdac",
+        "name": "Thailand Digital Arrival Card (TDAC)",
+        "description": "Обязательная цифровая карта прибытия для всех въезжающих (включая детей). Заполняется онлайн за 72 часа до прилёта.",
+        "url": "https://tdac.immigration.go.th/arrival-card/#/home",
+        "manual_url": "https://tdac.immigration.go.th/manual/en/index.html",
+        "faq_url": "https://tdac.immigration.go.th/manual/en/faq.html"
+      },
+      {
+        "id": "evisa",
+        "name": "Thailand e-Visa",
+        "description": "Официальный портал электронной визы Таиланда. Используется для долгосрочного пребывания и некоторых типов виз.",
+        "url": "https://www.thaievisa.go.th/",
+        "manual_url": "https://www.thaievisa.go.th/static/English-Manual.pdf"
+      }
+    ],
+    "last_checked": "2026-03-15"
+  },
+  "uae": {
+    "name": "ОАЭ",
+    "forms": [],
+    "last_checked": null
+  },
+  "turkey": {
+    "name": "Турция",
+    "forms": [],
+    "last_checked": null
+  },
+  "vietnam": {
+    "name": "Вьетнам",
+    "forms": [],
+    "last_checked": null
+  },
+  "srilanka": {
+    "name": "Шри-Ланка",
+    "forms": [],
+    "last_checked": null
+  }
+}
+
+
+
